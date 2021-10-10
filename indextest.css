@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(255, 255, 255);
+  background-image: url("./img/spellButton.png"), url("./img/anim1f0.png"),
+    url("./img/spellButton.png");
+  background-size: 25vw auto, auto 66vh, 25vw auto;
+
+  background-repeat: no-repeat;
+
+  background-position: 5vw, center, 66vw;
+}
+#matter {
+  position: absolute;
+}
+.selectuser {
+  display: none;
+}
+.selectuserb {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-size: 25vw auto, 25vw auto, 25vw auto;
+  }
+}
+/* #warning-message { display: none; }
+
+@media only screen and (orientation:portrait){
+
+    #wrapper { display:none; }
+
+    #warning-message { display:block; }
+
+}
+
+@media only screen and (orientation:landscape){
+
+    #warning-message { display:none; }
+
+}
+
+ @keyframes play {
+    from { background-position:    0px; }
+      to { background-position: -1584px; }
+}
+
+
+
+@-webkit-keyframes play {
+    from { background-position:    0px; }
+      to { background-position: -1584px; }
+ }
+ 
+ @-moz-keyframes play {
+    from { background-position:    0px; }
+      to { background-position: -1584px; }
+ }
+ 
+ @-ms-keyframes play {
+    from { background-position:    0px; }
+      to { background-position: -1584px; }
+ }
+ 
+ @-o-keyframes play {
+    from { background-position:    0px; }
+      to { background-position: -1584px; }
+ }
+
+  */

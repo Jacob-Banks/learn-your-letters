@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Harvey Animation Test </title>
+  <link href="./harveystyle.css" type="text/css" rel="stylesheet">
+</head>  
+</head>
+<div id="wrapper">
+<body>
+  <div>
+    <img onclick="showOption()" src="./img/spellButton.png" alt="your eldest boy"/>
+    </a>
+  </div>
+  <div id ="spell">
+    <a  class="selectuser" href="./indexspell.html" ><img onclick="createUser('harvey')" src="./img/spellHarvey.png" alt="your eldest boy"/>
+    </a>
+    <a class="selectuser"  href="./indexspell.html" ><img onclick="createUser('sol')" src="./img/spellSolomon.png" alt="your eldest boy"/>
+    </a> 
+    <a  class="selectuser" href="./indexspell.html" ><img onclick="createUser('frank')" src="./img/spellFrank.png" alt="your eldest boy"/>
+    </a> 
+    <a  class="selectuser" href="./indexspell.html" ><img onclick="createUser('alice')" src="./img/spellAlice.png" alt="your eldest boy"/>
+    </a> 
+    <a  class="selectuser" href="./indexspell.html" ><img onclick="createUser('andre')" src="./img/spellAndre.png" alt="your eldest boy"/>
+    </a> 
+    <a  class="selectuser" href="./indexspell.html" ><img onclick="createUser('luke')" src="./img/spellLuke.png" alt="your eldest boy"/>
+    </a> 
+    <a  class="selectuser" href="./indexspell.html" ><img onclick="createUser('vero')" src="./img/spellVero.png" alt="your eldest boy"/>
+    </a> 
+    <a  class="selectuser" href="./indexspell.html" ><img onclick="createUser('ben')" src="./img/spellBenjamin.png" alt="your eldest boy"/>
+    </a>
+    <a  class="selectuser" href="./indexspell.html" ><img onclick="createUser('emma')" src="./img/spellEmmanuelle.png" alt="your eldest boy"/>
+    </a>  
+ 
+  </div>
+  <div>
+    <img onclick="showOptionB()" src="./img/bonkButton.png" alt="your eldest boy"/>
+   
+  </div>
+  <div id ="bonk">
+    <a  class="selectuserb" href="./feed.html" ><img onclick="createUser('harvey')" src="./img/bonkHarvey.png" alt="your eldest boy"/>
+    </a>
+    <a class="selectuserb"  href="./feed.html" ><img onclick="createUser('frank')" src="./img/bonkFrank.png" alt="your eldest boy"/>
+    </a> 
+    <a  class="selectuserb" href="./feed.html" ><img onclick="createUser('emma')" src="./img/bonkEmma.png" alt="your eldest boy"/>
+    </a> 
+ 
+   
+ 
+         
+  <div id ="abc">
+        <a  href="./abc.html" ><img onclick="createUser('harvey')"src="./img/Abc.png" alt="your eldest boy"/>
+        </a> 
+        <a  href="./abc.html" ><img onclick="createUser('emma')" src="./img/fAbc.png" alt="french abc button"/>
+        </a> 
+  </div>    
+     <script src="matter.js"></script>
+    
+   
+</body>
+</div>
+</html>
+
+<script>
+
+
+function createUser(who) {
+  localStorage.setItem("test1", who);
+}
+// console.log(who);
+function showOption(){
+  var arrayOfElements=document.getElementsByClassName('selectuser');
+var lengthOfArray=arrayOfElements.length;
+for (var i=0; i<lengthOfArray;i++){
+  arrayOfElements[i].style.display='inline';
+}
+}
+function showOptionB(){
+  var arrayOfElements=document.getElementsByClassName('selectuserb');
+var lengthOfArray=arrayOfElements.length;
+for (var i=0; i<lengthOfArray;i++){
+  arrayOfElements[i].style.display='inline';
+}
+}
+  
+      var images = new Array()
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image()
+          images[i].src = preload.arguments[i]
+        }
+      }
+      preload(  './img/emmaAnim/lookDown.png','./img/emmaAnim/lookLeft.png','./img/emmaAnim/lookRight.png','./img/emmaAnim/lookRightUp.png',
+    './img/emmaAnim/lookUp.png','./img/emmaAnim/lookLeftUp.png','./img/emmaAnim/base.png','./img/emmaAnim/base.png','./img/emmaAnim/wrong1.png','./img/emmaAnim/wrong2.png','./img/emmaAnim/wrong3.png',
+    './img/emmaAnim/right1.png','./img/emmaAnim/right2.png','./img/emmaAnim/right3.png','./img/emmaAnim/win1.png','./img/emmaAnim/win2.png','./img/emmaAnim/win3.png', './img/harveyAnim/wrong1.png','./img/harveyAnim/wrong2.png','./img/harveyAnim/wrong3.png','./img/harveyAnim/wrong4.png',
+    './img/harveyAnim/lookdown.png','./img/harveyAnim/lookdown.png','./img/harveyAnim/lookdownalso.png','./img/harveyAnim/lookdownalso2.png',
+    './img/harveyAnim/lookleft.png','./img/harveyAnim/lookup.png','./img/harveyAnim/lookwayleft.png','./img/harveyAnim/lookwayright.png','./img/harveyAnim/base.png','./img/harveyAnim/animArmPump1.png','./img/harveyAnim/animArmPump2.png','./img/harveyAnim/animArmPump1.png',
+    './img/harveyAnim/base.png','./img/harveyAnim/winner1.png','./img/harveyAnim/winner2.png','./img/harveyAnim/winner1.png'
+                )
+    //--><!]]>
+  </script> 
+
+
+
+
+</script>
+
+<script src="matter.js"></script>
+

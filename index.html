@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Harvey Animation Test </title>
+  <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+
+
+
+<body>
+  <div id="abc">
+    <div class="abcheader">
+      <h2>Learn your Letters</h2>
+    </div>
+
+    <div>
+      <h3>in english</h3>
+      <a href="./abc.html"><img onclick="createUser('harvey')" src="./img/Abc.png" alt="english abc" />
+      </a>
+    </div>
+    <div>
+      <h3>en francais</h3>
+      <a href="./abc.html"><img onclick="createUser('emma')" src="./img/fAbc.png" alt="french abc button" />
+      </a>
+    </div>
+  </div>
+
+  <div id="spell">
+    <div class="spellheader">
+      <h4>Learn to Speel</h4>
+
+    </div>
+    <div class="versions">
+      <div class="selectuser">
+        <h5>Vehicles</h5>
+        <a href="./indexspell.html"><img onclick="createUser('airplane')" src="./img/spellVehicles.png"
+            alt="your eldest boy" />
+        </a>
+      </div>
+      <div class="selectuser">
+        <h5> Animals</h5>
+        <a href="./indexspell.html"><img onclick="createUser('cat')" src="./img/spellAnimals.png"
+            alt="your eldest boy" />
+        </a>
+      </div>
+      <div class="selectuser">
+        <h5>Family</h5>
+        <a href="./indexspell.html"><img onclick="createUser('harvey')" src="./img/spellFamily.png"
+            alt="your eldest boy" />
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="matter.js"></script>
+
+
+</body>
+
+
+</html>
+
+<script>
+
+
+  function createUser(who) {
+    localStorage.setItem("test1", who);
+  }
+  // console.log(who);
+  function showOption() {
+    var arrayOfElements = document.getElementsByClassName('selectuser');
+    var lengthOfArray = arrayOfElements.length;
+    for (var i = 0; i < lengthOfArray; i++) {
+      arrayOfElements[i].style.display = 'inline';
+    }
+  }
+  function showOptionB() {
+    var arrayOfElements = document.getElementsByClassName('selectuserb');
+    var lengthOfArray = arrayOfElements.length;
+    for (var i = 0; i < lengthOfArray; i++) {
+      arrayOfElements[i].style.display = 'inline';
+    }
+  }
+
+  var images = new Array()
+  function preload() {
+    for (i = 0; i < preload.arguments.length; i++) {
+      images[i] = new Image()
+      images[i].src = preload.arguments[i]
+    }
+  }
+  preload('./img/harveyAnim/lookdown.png', './img/harveyAnim/lookdown.png', './img/harveyAnim/lookdownalso.png', './img/harveyAnim/lookdownalso2.png',
+    './img/harveyAnim/lookleft.png', './img/harveyAnim/lookup.png', './img/harveyAnim/lookwayleft.png', './img/harveyAnim/lookwayright.png', './img/harveyAnim/base.png', './img/harveyAnim/animArmPump1.png', './img/harveyAnim/animArmPump2.png', './img/harveyAnim/animArmPump1.png',
+    './img/harveyAnim/base.png', './img/harveyAnim/winner1.png', './img/harveyAnim/winner2.png', './img/harveyAnim/winner1.png', './img/emmaAnim/lookDown.png', './img/emmaAnim/lookLeft.png', './img/emmaAnim/lookRight.png', './img/emmaAnim/lookRightUp.png',
+    './img/emmaAnim/lookUp.png', './img/emmaAnim/lookLeftUp.png', './img/emmaAnim/base.png', './img/emmaAnim/base.png', './img/emmaAnim/wrong1.png', './img/emmaAnim/wrong2.png', './img/emmaAnim/wrong3.png',
+    './img/emmaAnim/right1.png', './img/emmaAnim/right2.png', './img/emmaAnim/right3.png', './img/emmaAnim/win1.png', './img/emmaAnim/win2.png', './img/emmaAnim/win3.png', './img/harveyAnim/wrong1.png', './img/harveyAnim/wrong2.png', './img/harveyAnim/wrong3.png', './img/harveyAnim/wrong4.png',
+
+  )
+    //--><!]]>
+</script>
+
+
+
+
+</script>
+
+<script src="matter.js"></script>

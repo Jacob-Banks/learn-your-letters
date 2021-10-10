@@ -1,0 +1,24 @@
+body{
+  
+  background-color: rgb(240, 240, 240);  
+  /* 
+  background-image: url('./img/anim1f0.png'); */
+  background-size: 300px 658px;
+  
+  background-repeat: no-repeat;
+  
+  background-position: 500px 44px; 
+    
+} 
+#matter{
+  position: absolute;
+  
+} 
+.selectuser{
+  display: none;
+}
+.selectuserb{
+  display: none;
+}
+#warning-message { display: none; }
+

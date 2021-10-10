@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(221, 219, 107);
+}
+
+#abc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.abcheader {
+  width: 100%;
+  margin: auto;
+}
+#spell {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.spellheader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 100%;
+  align-items: center;
+  font-size: 26px;
+}
+.header img {
+  max-width: 300px;
+}
+.versions {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 100%;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 28px;
+}
